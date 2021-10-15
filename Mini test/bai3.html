@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a">number1
+<input type="text" id="b">number2
+<input type="button" value="check" onclick="check()">
+<h1 id="total"></h1>
+<script>
+    function check() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let s = a * b;
+        document.getElementById("total").innerHTML = s ;
+    }
+</script>
+
+</body>
+</html>

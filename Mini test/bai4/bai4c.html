@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="num1">a
+<input type="text" id="num2">b
+<input type="button" value="check" onclick="check()">
+<p id="ketqua"></p>
+<script>
+    function check(){
+        let a = document.getElementById("num1").value;
+        let b = document.getElementById("num2").value;
+        let total= a;
+        for (b = 0 ; b < a ; b ++){
+            total = total + b;
+        }
+        document.getElementById("ketqua").innerHTML = total;
+
+    }
+
+
+</script>
+</body>
+</html>
